@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="crtventas">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>crtventas</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Firebase SDKs -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-app.js";
+    import { getAuth } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-auth.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore.js";
+
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAcC2EBb8n9jMWjDD15eWAkFoEf-NjTd-I",
+      authDomain: "webman-eecaa.firebaseapp.com",
+      projectId: "webman-eecaa",
+      storageBucket: "webman-eecaa.appspot.com",
+      messagingSenderId: "778834766891",
+      appId: "1:778834766891:web:93c4264c6a1b42023bce6e"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app); // Initialize Firebase Auth
+    const db = getFirestore(app); // Initialize Cloud Firestore
+  </script>
+</head>
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
